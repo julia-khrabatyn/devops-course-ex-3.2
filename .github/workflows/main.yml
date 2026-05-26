@@ -1,0 +1,11 @@
+name: my-portfolio
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to Render
+      run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
