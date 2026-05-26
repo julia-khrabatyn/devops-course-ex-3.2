@@ -1,4 +1,5 @@
-name: my-portfolio
+name: Deploy to Render
+on:
   push:
     branches:
       - main
